@@ -16,10 +16,18 @@ The **Model Context Protocol (MCP)** Server parses resumes, answers questions ab
 - PDF-parse (for extracting text from resumes)
 - Nodemailer (for sending emails)
 
-## 🚀 Getting Started
+---
 
-### 1. Clone the Repo
+## ⚙️ Environment Setup (`.env`)
 
-```bash
-git clone https://github.com/letsclode/resume-mcp-server.git
-cd resume-mcp-server
+Before running the project, create a `.env` file in the root folder and include:
+
+```env
+# OpenAI API Key
+OPENAI_API_KEY=sk-your-key
+
+# Email Configuration
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USER=your_email@gmail.com
+EMAIL_PASS=your_app_password
